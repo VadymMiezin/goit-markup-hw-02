@@ -10,21 +10,19 @@
 
 body {
   font-family: "Roboto", sans-serif;
+  letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
 
 /* Посилання та кнопки */
-
-.link:hover,
-.link:focus {
-  color: var(--accent-color);
-}
 
 .link {
   text-decoration: none;
 }
 
 .button {
+  font-family: inherit;
+  letter-spacing: 0.06em;
   cursor: pointer;
   color: var(--primary-white-color);
   background-color: var(--accent-color);
@@ -43,6 +41,7 @@ body {
   font-size: 14px;
   font-weight: 500;
   line-height: 1.1;
+  letter-spacing: 0.02em;
 }
 
 .logo {
@@ -50,11 +49,27 @@ body {
   font-size: 26px;
   font-weight: 700;
   line-height: 1.2;
+  letter-spacing: 0.03em;
   text-decoration: none;
+  color: #000000;
 }
 
-.contacts {
+.site-nav .link {
+  color: var(--primary-text-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+
+.contacts .link {
   color: var(--secondary-text-color);
+}
+
+.contacts .link:hover,
+.contacts .link:focus {
+  color: var(--accent-color);
 }
 
 /* Герой */
@@ -67,6 +82,7 @@ body {
   font-size: 44px;
   font-weight: 900;
   line-height: 1.4;
+  letter-spacing: 0.06em;
   color: var(--primary-white-color);
 }
 
@@ -131,11 +147,62 @@ body {
 }
 
 .address {
+  font-style: normal;
   font-size: 14px;
   line-height: 1.7;
+  color: var(--primary-white-color);
+}
+
+.footer .link {
   color: rgb(255, 255, 255, 0.6);
 }
 
-.address p {
+.footer .link:hover,
+.footer .link:focus {
+  color: var(--accent-color);
+}
+
+/* Кнопки фільтрів */
+
+.filter .button {
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  color: var(--primary-text-color);
+  background-color: var(--third-background-color);
+}
+
+.filter .button:hover,
+.filter .button:focus {
   color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+
+/* Приклади робіт */
+
+.work-examples-list h2 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--primary-text-color);
+}
+
+.work-examples-list p {
+  font-size: 16px;
+  line-height: 1.9;
+  color: var(--secondary-text-color);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
